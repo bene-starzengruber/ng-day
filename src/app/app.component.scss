@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+header {
+  background: #3b82f6;
+  flex: 0 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: white;
+  font-weight: 500;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  mat-icon {
+    cursor: pointer;
+  }
+}
+
+main {
+  display: flex;
+  padding: 2rem;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+app-arts {
+  overflow: auto;
+  resize: horizontal;
+}
+
+app-art-detail {
+  flex: 1 1 auto;
+}
+
+

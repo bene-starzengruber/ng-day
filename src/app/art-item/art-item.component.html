@@ -1,0 +1,8 @@
+<img [src]="art.imageUrl">
+
+<section>
+  <p resizeObserver (resized)="showOrHideArtist($event)">{{ art.title }}</p>
+  <sub *ngIf="artistVisible" class="art-item_artist">{{ art.artist }}</sub>
+</section>
+
+<mat-icon *ngIf="selected">check_circle</mat-icon>

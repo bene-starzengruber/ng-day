@@ -1,0 +1,16 @@
+<div>
+  <app-art-item *ngFor="let art of arts"
+                [art]="art"
+                [selected]="art | wrapFn : isSelected : selection"
+                (click)="selectionToggled.emit(art.id)"
+                (mouseover)="$event"
+  ></app-art-item>
+</div>
+
+
+<article #dogContainer>
+  <app-dog *inViewport="dogContainer"></app-dog>
+</article>
+
+
+

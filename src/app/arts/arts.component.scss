@@ -1,0 +1,18 @@
+:host {
+
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 800px;
+  min-width: 100%;
+}
+article {
+  padding-top: 2rem;
+}
+app-dog {
+  display: grid;
+  place-content: center;
+}
